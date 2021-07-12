@@ -1,0 +1,145 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #E5E5E5;
+}
+.container{
+    background-color: white;
+    width: 870px;
+    padding: 30px ;
+    margin-top: 21px;
+    border-radius: 5px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* top players style */
+.top-players{
+}
+.sec-title{
+    color: hsl(270, 86%, 32%);
+    margin-top: 3px;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+}
+.player img{
+    width: 56px;
+    height: 56px;
+}
+.player{
+    display: flex;
+    align-items: center;
+    
+}
+.player-name{
+    margin-left: 16px;
+    font-size: 18px;
+}
+hr{
+    margin-top: 30px;
+    border: 1px solid lightgray;
+    margin-bottom: 27px;
+}
+/*--------------
+ top blog styles
+ ----------------- */
+ .blogs{
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     grid-row-gap: 26px;
+ }
+.blog .thumbnail img{
+    width: 177px;
+    height: 117px;
+}
+.blog{
+    display: flex;
+}
+.blog-info{
+    margin-left: 16px;
+}
+.blog-title{
+    font-size: 16px;
+    width: 164px;
+}
+.author{
+    font-size: 16px;
+    color: #bcbbbb;
+}
+.author a{
+    color: #562EFF;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/*------------------------
+ courses style  
+ ----------------------*/
+
+.courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 25px;
+}
+.course{
+    Width: 252.42px;
+}
+
+.course .image img{
+    width: 224px;
+    height: 104px;
+}
+.fa-star.filled{
+    color: #FFC014;
+    ;
+}
+.fa-star.empty{
+    color: #AEAEAE;
+}
+.fa-star{
+    Width: 12.25px;
+    Height: 11.75px;
+}
+.course-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.course-duration{
+    background-color: #f59595;
+    border-radius: 19px;
+    padding: 4px 30px;
+    color: hsl(0, 95%, 60%);
+}
+
+/*-------------------- 
+media quaries
+___________________ */
+
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+      
+    }
+    .players, .blogs, .courses{
+        grid-template-columns: repeat(1, 1fr);
+      
+      
+        
+    }
+    .player, .blog, .course{
+        flex-direction: column;
+        margin-top: 10px;
+        align-items: center;
+    }
+
+    .courses{
+        width: 100%;
+        align-items: center;
+        margin-left: 19%;
+    }
+}
